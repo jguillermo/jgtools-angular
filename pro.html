@@ -4,8 +4,7 @@
     <title jgc-title title="jgTools - "></title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body ng-controller="layoutController">
     <div ui-view class="jgt-fill"></div>
@@ -19,44 +18,38 @@
                 src: 'plugins/code-prettify-master/loader/lang-css.js'
             }, {
                 id: 'angular',
-                src: '../dev/plugins/angular/angular.js'
+                src: '../bower_components/angular/angular.min.js'
             }, {
                 id: 'angular-ui-router',
-                src: '../dev/plugins/angular-ui-router/angular-ui-router.js'
-            }, {
-                id: 'angular-bootstrap',
-                src: '../dev/plugins/angular-bootstrap/ui-bootstrap-tpls.js'
+                src: '../bower_components/angular-ui-router/release/angular-ui-router.min.js'
             }, {
                 id: 'jg-tools',
-                src: '../dev/jg-tools.js'
+                src: '../dist/current/jg-tools.min.js'
             }, {
                 id: 'script',
                 src: 'script.js'
             }],
             link: [{
-                id: 'b11485a81ac2e2c01dd9df1ebde326bc',
+                id: 'sunburst',
                 href: 'plugins/code-prettify-master/loader/skins/sunburst.css'
             }],
-            cache:false,
-            version:'5',
+            cache:true,
             cachePrefix:'jtlc',
-            base_url:'../dev/',
             onLoad:function(){
                 angular.module('AppDoc.config', [])
                 .constant("APPCONFIG", {
-                    "base_url": jsApiModule.base_url,
+                    "view_url": "../",
+                    "base_url": "",
+                    "baseFile": "../dist/current/",
                     "skin":"skin-1",
-                    "skinSufix":".css",
-                    "loadModule":false,
-                    "cache":jsApiModule.cache,
-                    "version":jsApiModule.version,
+                    "skinSufix":".min.css",
+                    "loadModule":true,
                     "cachePrefix": jsApiModule.cachePrefix
                 });
                 angular.bootstrap(document, ['AppDoc']);
-                
             }
         };
     </script>
-    <script type="text/javascript" charset="utf-8" src="../dev/jsapi.js" async=""></script>
+    <script type="text/javascript" charset="utf-8" src="../dist/current/jsapi.min.js" async=""></script>
 </body>
 </html>

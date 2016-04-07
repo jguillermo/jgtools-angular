@@ -1,0 +1,16 @@
+<h2>Cache http</h2>
+<p>Guarda el ajax a un session storage</p>
+<br>
+<p>link : {{link}}</p>
+<br>
+<button ng-click="saveHttp('./data/data.json')" >get http1</button> <button ng-click="saveHttp('./data/data2.json')" >get http2</button>
+{{loading}}
+<pre>
+{{data | json}}
+</pre>
+<pre class="prettyprint">
+jgsCacheHttpServices.http( url ).then(function(rpta) {
+  console.log(rpta);
+});
+
+</pre>

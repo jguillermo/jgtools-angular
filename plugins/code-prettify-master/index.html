@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="AppDoc">
+<head>
+    <title>JGtools-doc</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="loader/skins/sunburst.css" media="all">
+    <script type="text/javascript" charset="utf-8" src="loader/prettify.js" ></script>
+    <script type="text/javascript" charset="utf-8" src="loader/lang-css.js" ></script>
+
+</head>
+<body onload="prettyPrint()">
+    
+
+    <?prettify lang=js linenums=true?>
+    <pre class="prettyprint">
+        
+(function() {
+  'use strict';
+  angular
+    .module('App', ['jgTools'])
+    .controller('layoutController',['$scope','$jgcLayout',function($scope,$jgcLayout){
+        $scope.closewest=function(){
+            console.log('close west 1');
+            $jgcLayout.getInstance('menu_principal_1').changeToogleWest();
+        }
+    }])
+    .controller('layoutController2',['$scope','$jgcLayout',function($scope,$jgcLayout){
+        $scope.closewest2=function(){
+            console.log('close west 2');
+            $jgcLayout.getInstance('menu_principal_2').changeToogleWest();
+        }
+    }]);
+})();
+
+    </pre>
+
+<?prettify lang=css linenums=true?>
+    <pre class="prettyprint">
+        
+.hola{
+    color:red;
+}
+
+    </pre>
+
+</body>
+</html>

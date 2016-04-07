@@ -1,0 +1,43 @@
+
+
+	<button ng-click="bloqueo=!bloqueo" >cambio</button>
+	
+	<h4>{{bloqueo}}</h4>
+	<div jgc-block jg-block-enable="{{bloqueo}}" jg-block-type="1">
+		se debe bloquear este bloque
+		<p>
+			<input type="text" ></p>
+	</div>
+
+	<div jgc-block jg-block-enable="{{bloqueo}}" jg-block-type="2">
+		se dese bloqueao transparente
+		<p>
+			<input type="text" ></p>
+	</div>
+
+
+<pre class="prettyprint">
+<div jgc-p-block jg-block-enable="{{bloqueo}}" jg-block-type="1">
+	se debe bloquear este bloque
+	<p><input type="text" ></p>
+</div>
+</pre>
+<pre class="prettyprint">
+<div jgc-block jg-block-enable="{{bloqueo}}" jg-block-type="2">
+	se dese bloqueao transparente
+	<p><input type="text" ></p>
+</div>
+</pre>
+
+	<div jgc-block>
+		se debe bloquear este bloque, sin parametros
+		<p>
+			<input type="text" ></p>
+	</div>
+<pre class="prettyprint">
+<div jgc-p-block>
+	se debe bloquear este bloque, sin parametros
+	<p><input type="text" ></p>
+</div>
+</pre>
+	

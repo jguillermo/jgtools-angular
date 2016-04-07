@@ -1,0 +1,16 @@
+<h2>Load Script</h2>
+<p>Carga en forma asincrona un script y espera retorna un callback al finalizar</p>
+<p>si se llama mas de una vez el mismo script, este espera y retorna l amisma fucnion callback </p>
+<input type="text" ng-model="scriptSrc" style="width:90%" >
+<br>
+<button ng-click="loadScript()" >save Link</button>
+{{loading}}
+
+<pre class="prettyprint">
+jgsScriptAsyncServices.putScript($scope.scriptSrc).then(function() {
+  // success
+}, function() {
+  // error
+});
+
+</pre>

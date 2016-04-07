@@ -1,0 +1,36 @@
+<pre class="prettyprint">
+  <script type="text/javascript" charset="utf-8" src="jsapi.js" async ></script>
+</pre>
+<pre class="prettyprint">
+var jsApiModule = {
+    script: [{
+        id: 'e9cf29fffee32671775f3a96926272c8',
+        src: 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'
+    }, {
+        id: '093b7f6d4492f722f07cfbe4c0fb3095',
+        src: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'
+    }],
+    linkServer: [{
+        id: '69ae672b5d291d3262f56a5e5e3d0664',
+        href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'
+    }, {
+        id: '6ae670eab3466dd5422f6a36527baa45',
+        href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css'
+    }],
+    link: [],
+    cache:true,
+    cachePrefix:'jtlc',
+    onLoad:function(){
+        console.log('cargaron todos los scripts');
+        
+    }
+};
+</pre>
+
+cache : para que los css se carguen de la memoria storage <br>
+cachePrefix : el nombre que tienen los script al guardar en el storage
+<br> <br>
+<div class="row">
+  <iframe class="col-xs-12" style="height:300px;" src="../src/plugins/jsapi/example.html" frameborder="0"></iframe>
+</div>
+

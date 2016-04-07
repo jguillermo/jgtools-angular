@@ -1,0 +1,101 @@
+<br>
+<br>
+<br>
+<h3>RESPONSIVE</h3>
+<div class="row">
+	<div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
+		<jgc-google-chart type="{{typeChart}}" options="googleChart.options" data="googleChart.data" responsive ></jgc-google-chart>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+		<div>
+			<div>
+				<input class="form-control"  type="text" ng-model="googleChart.options.title"></div>
+			<div>
+				<select  class="form-control" name="" ng-model="typeChart" >
+					<option value="PieChart">PieChart</option>
+					<option value="LineChart">LineChart</option>
+					<option value="BarChart">BarChart</option>
+					<option value="Table">Table</option>
+				</select>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<pre class="prettyprint">
+<jgc-p-google-chart type="{{typeChart}}" options="googleChart.options" data="googleChart.data" responsive ></jgc-p-google-chart>
+</pre>
+
+
+<div class="row">
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+		<jgc-google-chart type="PieChart" options="googleChart.options" data="googleChart.data" responsive ></jgc-google-chart>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+		<jgc-google-chart type="LineChart" options="googleChart.options" data="googleChart.data" responsive ></jgc-google-chart>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+		<jgc-google-chart type="BarChart" options="googleChart.options" data="googleChart.data" responsive ></jgc-google-chart>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+		<jgc-google-chart type="Table" options="googleChart.options" data="googleChart.data" responsive ></jgc-google-chart>
+	</div>
+</div>
+
+
+<pre class="prettyprint">
+<div class="row">
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+		<jgc-p-google-chart type="PieChart" options="googleChart.options" data="googleChart.data" responsive ></jgc-p-google-chart>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+		<jgc-p-google-chart type="LineChart" options="googleChart.options" data="googleChart.data" responsive ></jgc-p-google-chart>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+		<jgc-p-google-chart type="BarChart" options="googleChart.options" data="googleChart.data" responsive ></jgc-p-google-chart>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+		<jgc-p-google-chart type="Table" options="googleChart.options" data="googleChart.data" responsive ></jgc-p-google-chart>
+	</div>
+</div>
+</pre>
+
+
+<br>
+<br>
+<br>
+<h3>NO RESPONSIVE</h3>
+
+<div>
+	<jgc-google-chart type="PieChart" options="googleChart.options" data="googleChart.data"></jgc-google-chart>
+</div>
+<pre class="prettyprint">
+<jgc-p-google-chart type="PieChart" options="googleChart.options" data="googleChart.data"></jgc-p-google-chart>
+</pre>
+
+
+<div>
+	<jgc-google-chart type="PieChart" options="pieChart.options" data="pieChart.data"></jgc-google-chart>
+</div>
+<pre class="prettyprint">
+<jgc-p-google-chart type="PieChart" options="pieChart.options" data="pieChart.data"></jgc-p-google-chart>
+</pre>
+
+
+<div>
+	<jgc-google-chart type="Table" options="table.options" data="table.data"></jgc-google-chart>
+</div>
+<pre class="prettyprint">
+<jgc-p-google-chart type="Table" options="table.options" data="table.data"></jgc-p-google-chart>
+</pre>
+
+
+
+
+ <jgc-card>
+  <div class="card-title" style="margin-bottom: 0">mapa</div>
+ 
+  	<jgc-google-chart type="Map" options="map.options" data="map.data" responsive=""></jgc-google-chart>
+  
+</jgc-card>
