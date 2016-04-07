@@ -1,0 +1,4 @@
+@import "ini";
+// se genera el core de la aplicacion, inicia conboostrap y se puede poner 
+@import "../../style/core";
+@import "form"; // se puso temporalmente en este lugar, se debe crear una directiva para llamar a este css

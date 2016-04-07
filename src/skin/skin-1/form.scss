@@ -1,0 +1,108 @@
+@import "ini";
+// se genera el core de la aplicacion, inicia conboostrap y se puede poner 
+//@import "../../components/tool-bar/style/tool-bar";
+//
+//
+select.form-control{
+	-webkit-appearance: none;
+            -ms-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            padding-right: 15px;
+            background-image: url('data:image/svg+xml,<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10px" height="10px" viewBox="0 0 30.724 30.725" style="enable-background:new 0 0 30.724 30.725;" xml:space="preserve"><g><path d="M29.992,10.182l-14.63,14.63L0.732,10.182c-0.977-0.976-0.977-2.559,0-3.535c0.976-0.977,2.559-0.977,3.535,0l11.094,11.093L26.457,6.646c0.977-0.977,2.56-0.977,3.536,0C30.968,7.622,30.968,9.205,29.992,10.182z"/></g></svg>');
+            background-position: 96% 50%;
+            background-repeat: no-repeat;  
+}
+select.form-control  option.select-info {
+    font-size: 0.8em;
+    color: #ABC;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 3px 10px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 15px;
+}
+
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+}
+
+.form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #999;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #999;
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  background-color: #eee;
+  opacity: 1;
+}
+
+.form-control[disabled],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+}
+
+textarea.form-control {
+  height: auto;
+}
+
+.help-block {
+    margin-top: -15px;
+    font-size: 0.8em;
+}
+
+
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline,
+.has-error.radio label,
+.has-error.checkbox label,
+.has-error.radio-inline label,
+.has-error.checkbox-inline label {
+  color: #a94442;
+}
+
+.has-error .form-control {
+  border-color: #a94442;
+  
+}
+
+.has-error .form-control:focus {
+  border-color: #843534;
+  
+}
+
+.has-error .input-group-addon {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #a94442;
+}
+
+.has-error .form-control-feedback {
+  color: #a94442;
+}

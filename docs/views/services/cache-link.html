@@ -1,0 +1,15 @@
+<h2>Cache Link</h2>
+<p>Guarla el css en un local storage</p>
+<input type="text" ng-model="linkHref" style="width:90%" >
+<br>
+<button ng-click="saveLink()" >save Link</button>
+{{loading}}
+
+<pre class="prettyprint">
+jgsCacheLinkServices
+  .saveLink($scope.linkHref)
+  .then(function(rpta){
+    
+});
+
+</pre>

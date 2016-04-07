@@ -1,0 +1,80 @@
+<div style="height: 150px;">
+<jgc-layout jgt-component-id="menu_principal_2" >
+    <jgc-layout-west style="background-color: cadetblue;">West</jgc-layout-west>
+    <jgc-layout-center style="background-color: #D38C8C;height: 150px;">
+        <div class="content container-fluid">center <button ng-click="changeWest()" >change West</button></div>
+    </jgc-layout-center>
+</jgc-layout> 
+</div>
+
+<pre class="prettyprint">
+<jgc-p-layout jgt-component-id="menu_principal_2" >
+    <jgc-p-layout-west>West</jgc-p-layout-west>
+    <jgc-p-layout-center>
+        <div class="content container-fluid">center <button ng-click="changeWest()" >change West</button></div>
+    </jgc-p-layout-center>
+</jgc-p-layout>
+</pre>
+
+<pre class="prettyprint">
+$scope.changeWest = function() {
+    $jgcLayout.getInstance('menu_principal_2').changeToogleWest();
+}
+</pre>
+
+<br>
+<br>
+<br>
+<h3>Layout Anidado</h3>
+<div style="height: 250px;">
+
+<jgc-layout jgt-component-id="layout_anidado_1" >
+    <jgc-layout-west style="background-color: cadetblue;">west 1</jgc-layout-west>
+    <jgc-layout-center  style="background-color: #D38C8C;height: 250px;">
+        <div class="content container-fluid">
+            center 1
+            <br>
+            <button ng-click="changeWest_anidado_1()" >change West 1</button>
+            <br>
+            <button ng-click="changeWest_anidado_2()" >change West 2</button>
+            <br>
+            <div style="height: 150px;">
+                <jgc-layout jgt-component-id="layout_anidado_1_1" >
+                    <jgc-layout-west  style="background-color: #1C7D80;">west 2</jgc-layout-west>
+                    <jgc-layout-center style="background-color: #A76666;height: 150px;">
+                        <div class="content container-fluid">
+                            center 2
+                            <br>
+                            <button ng-click="changeWest_anidado_1()" >change West 1</button>
+                            <br>
+                            <button ng-click="changeWest_anidado_2()" >change West 2</button>
+                        </div>
+                    </jgc-layout-center>
+                </jgc-layout>
+            </div>
+        </div>
+    </jgc-layout-center>
+</jgc-layout>
+       
+</div>
+
+<pre class="prettyprint">
+<jgc-p-layout jgt-component-id="layout_anidado_1" >
+    <jgc-p-layout-west>west 1</jgc-p-layout-west>
+    <jgc-p-layout-center>
+        <div class="content container-fluid">
+            center 1
+            <div style="height: 150px;">
+                <jgc-p-layout jgt-component-id="layout_anidado_1_1" >
+                    <jgc-p-layout-west >west 2</jgc-p-layout-west>
+                    <jgc-p-layout-center>
+                        <div class="content container-fluid">
+                            center 2
+                        </div>
+                    </jgc-p-layout-center>
+                </jgc-p-layout>
+            </div>
+        </div>
+    </jgc-p-layout-center>
+</jgc-p-layout>
+</pre>

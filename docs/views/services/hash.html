@@ -1,0 +1,11 @@
+<h2>MD5</h2>
+<input type="text" ng-model="txt">
+<br>
+md5 : {{md5(txt)}}
+
+
+<pre class="prettyprint">
+$scope.md5 = function(t) {
+  return jgsHashServices.md5(t);
+}
+</pre>

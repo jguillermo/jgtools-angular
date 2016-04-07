@@ -1,0 +1,124 @@
+@import "mixins";
+
+.jgc-layout {
+	height: 100%;
+	width: 100%;
+	position: relative;
+
+	&.toggled-west > div{
+		&.jgc-layout-block {
+			display: block;
+		}
+
+		> div{
+			&.jgc-layout-west {
+				width: $jgc-layout-width;
+				overflow-x: hidden;
+				background-color: $jgc-menu-bg;
+			}
+			&.jgc-layout-center {
+				overflow: hidden;
+				height: 150px;
+			}
+		}
+	}
+
+	>div {
+		&.jgc-layout-block {
+			display: none;
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			z-index: 500;
+			background-color: rgba(201, 206, 204, 0.49);
+		}
+
+		> div {
+			&.jgc-layout-center {
+				height: 100%;
+				width: 100%;
+
+				> div.content {
+					padding-left: $jgc-layout-padding-left;
+					padding-right: $jgc-layout-padding-right;
+					&>div[ui-view]>div.row,
+					& >.row{
+						margin-left: $jgc-layout-padding-left;
+						margin-right: $jgc-layout-padding-right;
+					}
+				}
+
+			}
+
+			//west
+			&.jgc-layout-west {
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				width: 0;
+				z-index: 999;
+				overflow-y: auto;
+				padding-bottom: 30px;
+				//-webkit-transition: all 0.1s ease;
+				//-moz-transition: all 0.1s ease;
+				//-o-transition: all 0.1s ease;
+				//transition: all 0.1s ease;
+			}
+
+		}
+
+	}
+
+	@media(min-width:750px) {
+		&.toggled-west > div {
+			&.jgc-layout-block {
+				display: none;
+			}
+
+			> div {
+				&.jgc-layout-west {
+					width: 0;
+				}
+
+				&.jgc-layout-center {
+					padding-left: 0;
+					overflow: visible;
+					height: 100%;
+				}
+
+			}
+
+		}
+
+		> div > div {
+			&.jgc-layout-west {
+				width: $jgc-layout-width;
+
+				.btn-menu-toggle {
+					display: none;
+				}
+
+			}
+
+			&.jgc-layout-center {
+				padding-left: $jgc-layout-width;
+
+				
+				> div.content {
+					padding-left: $jgc-layout-desktop-padding-left;
+					padding-right: $jgc-layout-desktop-padding-right;
+
+					
+				}
+				
+
+			}
+
+		}
+
+	}
+
+}

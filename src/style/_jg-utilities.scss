@@ -1,0 +1,40 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+body {
+	background-color: $body-background-color;
+}
+.jgt-fill {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.jgt-padding-bottom-20 {
+	padding-bottom: 20px !important;
+}
+@media (max-width:$screen-sm-min) {
+	input[type='text'],
+input[type='number'],
+textarea {
+  font-size: 16px;
+}
+	.modal-dialog {
+		margin: 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+		background-color: white;
+	}
+	.modal-content {
+		border-radius: 0;
+		border: none;
+
+		-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+		
+	}
+}

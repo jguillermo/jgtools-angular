@@ -1,0 +1,158 @@
+@import "mixins";
+
+.jgc-card {
+	display: block;
+	padding: 0;
+	line-height: 20px;
+	word-wrap: break-word;
+	font-size: 14px;
+	text-align: left;
+	background-color: #fff;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	margin: 0 $jgc-card-margin 10px $jgc-card-margin;
+
+	>.row {
+		
+     margin-left: 0; 
+     margin-right: 0; 
+
+	}
+
+	.card-section {
+		display: block;
+		margin: 0;
+		padding: 11px 16px 11px 16px;
+
+		&~.card-section:not(.no-sep),
+		&~div>.card-section:not(.no-sep) {
+			border-top: 1px solid rgba(0, 0, 0, .12);
+		}
+
+	}
+
+	.card-title {
+		margin: 0;
+		border-bottom: 1px solid rgba(0, 0, 0, .12);
+		display: block;
+		font-size: 14px !important;
+		font-weight: 400;
+		line-height: 20px;
+		padding: 14px 16px 10px 16px;
+		background-color: #f8f8f8;
+		color: rgba(0, 0, 0, .54);
+		font-weight: 500;
+		margin-bottom: 15px;
+	}
+
+	.card-list {
+		font-size: 14px;
+		margin-top: -1px;
+		padding-bottom: 1px;
+		list-style: none;
+		padding-left: 0;
+
+		.item {
+			margin: 0;
+			padding: 16px;
+			position: relative;
+
+			a {
+				.row{
+					margin-left: -16px;
+					margin-right:-16px;
+				}
+			}
+
+			.row
+			{
+				margin-left: -16px;
+				margin-right: -16px;
+				.row{
+					margin-left: -15px;
+					margin-right: -15px;
+				}
+			}
+			
+			.rowjg
+			{
+				margin-left: -16px;
+				margin-right: 0;
+			}
+
+			.icon {
+				color: rgba(0, 0, 0, .54);
+				right: 16px;
+				top: 13px;
+				height: 24px;
+				position: absolute;
+				width: 24px;
+				z-index: 0;
+			}
+
+			a {
+				display: block;
+				margin: -16px;
+				padding: 16px;
+				//width: 100%;
+				color: #333333;
+				//#777;
+			}
+			a.icon {
+				padding-right:40px;	
+			}
+
+			&~.item:not(.no-sep) {
+				border-top: 1px solid rgba(0, 0, 0, .12);
+			}
+
+		}
+
+	}
+
+	.card-link,
+	.card-btn {
+		display: block;
+		text-align: center;
+
+		a {
+			background-color: #FFF;
+			background-image: none;
+			color: #777;
+			padding: 11px 48px 11px 24px;
+			display: inline-block;
+			position: relative;
+			text-decoration: none;
+			&:hover{
+				color: #000;
+			}
+
+			.icon {
+				width: 24px;
+				position: absolute;
+				right: 24px;
+				top:7px;
+				
+				color: #BDB9B9;
+				i{
+					font-size: 30px;
+				}
+			}
+
+		}
+
+	}
+
+	.card-header {
+	}
+
+	.card-footer {
+	}
+
+	// para que no afecte el row col-xx-xx
+	.row & {
+		margin-left: $jgc-card-row-margin;
+		margin-right: $jgc-card-row-margin;
+	}
+
+}

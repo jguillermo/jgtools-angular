@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title jgc-title title="jgTools - "></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body ng-controller="layoutController">
+    <div ui-view class="jgt-fill"></div>
+    <script>
+        var jsApiModule = {
+            script: [{
+                id: 'prettify',
+                src: 'plugins/code-prettify-master/loader/prettify.js'
+            }, {
+                id: 'lang-css',
+                src: 'plugins/code-prettify-master/loader/lang-css.js'
+            }, {
+                id: 'angular',
+                src: '../bower_components/angular/angular.min.js'
+            }, {
+                id: 'angular-ui-router',
+                src: '../bower_components/angular-ui-router/release/angular-ui-router.min.js'
+            }, {
+                id: 'jg-tools',
+                src: '../dist/current/jg-tools.min.js'
+            }, {
+                id: 'script',
+                src: 'script.js'
+            }],
+            link: [{
+                id: 'sunburst',
+                href: 'plugins/code-prettify-master/loader/skins/sunburst.css'
+            }],
+            cache:true,
+            cachePrefix:'jtlc',
+            onLoad:function(){
+                angular.module('AppDoc.config', [])
+                .constant("APPCONFIG", {
+                    "view_url": "../",
+                    "base_url": "",
+                    "baseFile": "../dist/current/",
+                    "skin":"skin-1",
+                    "skinSufix":".min.css",
+                    "loadModule":true,
+                    "cachePrefix": jsApiModule.cachePrefix
+                });
+                angular.bootstrap(document, ['AppDoc']);
+            }
+        };
+    </script>
+    <script type="text/javascript" charset="utf-8" src="../dist/current/jsapi.min.js" async=""></script>
+</body>
+</html>

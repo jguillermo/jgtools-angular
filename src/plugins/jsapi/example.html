@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body >
+    <div class="panel panel-default">
+        <div class="panel-heading">carga async</div>
+        <div class="panel-body">
+            <div>
+                <!-- Nav tabs -->    
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->    
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">Home</div>
+                    <div role="tabpanel" class="tab-pane" id="profile">Profile</div>
+                    <div role="tabpanel" class="tab-pane" id="messages">Messages</div>
+                    <div role="tabpanel" class="tab-pane" id="settings">Settings</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" charset="utf-8" src="./jsapi.js" async ></script>
+    <script type="text/javascript" >
+
+    var jsApiModule = {
+        script: [{
+            id: 'e9cf29fffee32671775f3a96926272c8',
+            src: 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'
+        }, {
+            id: '093b7f6d4492f722f07cfbe4c0fb3095',
+            src: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'
+        }],
+        link: [],
+        linkServer: [{
+            id: '69ae672b5d291d3262f56a5e5e3d0664',
+            href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'
+        }, {
+            id: '6ae670eab3466dd5422f6a36527baa45',
+            href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css'
+        }],
+        cache:true,
+        cachePrefix:'jtlc',
+        onLoad:function(){
+            console.log('cargaron todo el escript');
+            
+        }
+    };
+
+    </script>
+    
+</body>
+</html>

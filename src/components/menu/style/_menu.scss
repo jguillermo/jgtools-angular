@@ -1,0 +1,106 @@
+@import "mixins";
+
+nav.jgc-menu {
+	background-color: $jgc-menu-bg;
+
+	ul {
+		padding-left: 0;
+		list-style: none;
+		ul {
+			margin-left: $jgc-menu-sub-menu-content-margin-left;
+			
+
+			li {
+				a.item {
+					padding-left: $jgc-menu-sub-menu-item-padding-left;
+					border: none;
+					color: $jgc-menu-sub-menu-item-color;
+					&:hover,
+					&:focus {
+						
+						color: $jgc-menu-sub-menu-item-hover-color;
+						background-color: inherit;
+						cursor: pointer;
+					}
+
+				}
+
+			}
+
+		}
+
+		li {
+			a.item {
+				position: relative;
+				display: block;
+				padding: $jgc-menu-item-padding-top $jgc-menu-item-padding-right $jgc-menu-item-padding-bottom $jgc-menu-item-padding-left;
+				margin-bottom: -1px;
+				border-top: $jgc-menu-item-border-top;
+				border-left: $jgc-menu-item-border-left;
+				border-right: $jgc-menu-item-border-right;
+				border-bottom: $jgc-menu-item-border-bottom;
+				color: $jgc-menu-link-color;
+
+				&:hover,
+				&:focus {
+					text-decoration: none;
+					color: $jgc-menu-link-hover-color;
+					background-color: $jgc-menu-hover-bg;
+				}
+
+				&.disabled,
+				&.disabled:hover,
+				&.disabled:focus {
+					background-color: $jgc-menu-disabled-bg;
+					color: $jgc-menu-disabled-color;
+					cursor: $cursor-disabled;
+				}
+
+				&.active,
+				&.active:hover,
+				&.active:focus {
+					z-index: 2;
+					color: $jgc-menu-active-color;
+					background-color: $jgc-menu-active-bg;
+					border-color: $jgc-menu-active-border;
+				}
+
+			}
+
+			a.parent {
+				+ ul {
+					display: none;
+				}
+
+				&:before {
+					position: absolute;
+					right: $jgc-menu-icon-right;
+					top: $jgc-menu-icon-top;
+					color: $jgc-menu-icon-color;
+					font-size: $jgc-menu-icon-font-size;
+					background-color: $jgc-menu-icon-background-color;
+					font-family: $jgc-menu-icon-font-family;
+				}
+
+				&:before {
+					content: $jgc-menu-icon-content;
+				}
+
+				&.open {
+					+ ul {
+						display: block;
+					}
+
+					&:before {
+						content: $jgc-menu-icon-content-open;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

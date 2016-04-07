@@ -1,0 +1,170 @@
+$layout_width: 220px;
+.layout {
+	&.toggled {
+		.ly-menu-left {
+			width: $layout_width;
+			overflow-x: hidden;
+		}
+
+		.ly-block {
+			display: block;
+		}
+
+		.ly-content {
+			overflow: hidden;
+			height: 150px;
+		}
+
+	}
+
+	.ly-block {
+		display: none;
+		position: fixed;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 500;
+		background-color: rgba(201, 206, 204, 0.49);
+	}
+
+	.ly-content {
+		height: 100%;
+		width: 100%;
+
+		> div.content {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+	}
+
+	.ly-menu-left {
+		position: fixed;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 0;
+		z-index: 999;
+		overflow-y: auto;
+
+		padding-bottom:300px;
+		-webkit-transition: all 0.2s ease;
+		-moz-transition: all 0.2s ease;
+		-o-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+		
+	}
+
+	@media(min-width:750px) {
+		&.toggled {
+			.ly-menu-left {
+				width: 0;
+			}
+
+			.ly-content {
+				padding-left: 0;
+				overflow: visible;
+				height: 100%;
+			}
+
+			.ly-block {
+				display: none;
+			}
+
+		}
+
+		.ly-menu-left {
+			width: $layout_width;
+
+			.btn-menu-toggle {
+				display: none;
+			}
+
+		}
+
+		.ly-content {
+			padding-left: $layout_width;
+
+			> div.content {
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+
+		}
+
+	}
+
+}
+
+
+
+
+
+/*
+
+// layou flexbox 
+#layout {
+	height: 100%;
+	width: 100%;
+	@extend %flexbox;
+
+	&.toggled {
+		.ly-menu-left {
+			@include flex(0, 0, 0);
+		}
+	}
+
+	.ly-content {
+		@include flex-grow(1);
+		overflow: auto;
+	}
+
+	.ly-menu-left {
+		@include flex(0, 0, 250px);
+		overflow-y: auto;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+		background: #3a3633;
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…BoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+		background: -moz-linear-gradient(left, #3a3633 93%, #2a2725 100%);
+		background: -webkit-gradient(linear, left top, right top, color-stop(93%, #3a3633), color-stop(100%, #2a2725));
+		background: -webkit-linear-gradient(left, #3a3633 93%, #2a2725 100%);
+		background: -o-linear-gradient(left, #3a3633 93%, #2a2725 100%);
+		background: -ms-linear-gradient(left, #3a3633 93%, #2a2725 100%);
+		background: linear-gradient(to right, #3a3633 93%, #2a2725 100%);
+	}
+	.ly-menu-left.smart-style-3 {
+		background: #f2f2f2;
+		border-right: 2px solid #ccc;
+	}
+	@media(max-width:768px) {
+		&.toggled {
+			.ly-menu-left {
+				@include flex(0, 0, 250px);
+			}
+
+			.ly-content {
+				overflow: hidden;
+
+				div {
+					overflow: hidden;
+				}
+
+			}
+
+		}
+		.ly-menu-left {
+			@include flex(0, 0, 0);
+		}
+		.ly-content {
+			>div {
+				padding: 0;
+			}
+		}
+	}
+}
+
+ */

@@ -1,0 +1,77 @@
+//colors
+$header_color_concrete_approx: #f3f3f3;
+$header_color_bon_jour_approx: #e2e2e2;
+$header_color_desert_storm_approx: #f8f8f8;
+$header_seashell: #f1f1f1;
+$header_color_silver_approx: #bfbfbf;
+$header_color_dove_gray_approx: #6d6a69;
+$header_color_log_cabin_approx: #222;
+$header_black_8: rgba(0, 0, 0, .08);
+$header_color_gray_nurse_approx: #e8e8e8;
+$header_color_gallery_approx: #ededed;
+$header_black_15: rgba(0, 0, 0, .15);
+
+.header {
+    display: block;
+    height: 49px;
+    margin: 0;
+    padding: 0 13px 0 0;
+    background-color: $header_color_concrete_approx;
+    background-image: -moz-linear-gradient(top, $header_color_concrete_approx, $header_color_bon_jour_approx);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from($header_color_concrete_approx), to($header_color_bon_jour_approx));
+    background-image: -webkit-linear-gradient(top, $header_color_concrete_approx, $header_color_bon_jour_approx);
+    background-image: -o-linear-gradient(top, $header_color_concrete_approx, $header_color_bon_jour_approx);
+    background-image: linear-gradient(to bottom, $header_color_concrete_approx, $header_color_bon_jour_approx);
+    background-repeat: repeat-x;
+    position: relative;
+    
+    >div.btn-header {
+        margin-left: 6px;
+        > a,> button {
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            border-radius: 2px;
+            display: inline-block;
+            font-weight: 700;
+            height: 30px;
+            line-height: 24px;
+            min-width: 30px;
+            padding: 2px;
+            text-align: center;
+            text-decoration: none !important;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            background-color: $header_color_desert_storm_approx;
+            background-image: -webkit-gradient(linear, left top, left bottom, from($header_color_desert_storm_approx), to($header_seashell));
+            background-image: -webkit-linear-gradient(top, $header_color_desert_storm_approx, $header_seashell);
+            background-image: -moz-linear-gradient(top, $header_color_desert_storm_approx, $header_seashell);
+            background-image: -ms-linear-gradient(top, $header_color_desert_storm_approx, $header_seashell);
+            background-image: -o-linear-gradient(top, $header_color_desert_storm_approx, $header_seashell);
+            background-image: linear-gradient(top, $header_color_desert_storm_approx, $header_seashell);
+            border: 1px solid $header_color_silver_approx;
+            color: $header_color_dove_gray_approx;
+            font-size: 17px;
+            margin: 10px 0 0;
+            &:hover {
+                border: 1px solid $header_color_silver_approx;
+                color: $header_color_log_cabin_approx;
+                transition: all 0s;
+                cursor: pointer;
+                -webkit-box-shadow: inset 0 0 4px 1px $header_black_8;
+                box-shadow: inset 0 0 4px 1px $header_black_8;
+            }
+            &:active {
+                background-color: $header_color_gray_nurse_approx;
+                background-image: -moz-linear-gradient(top, $header_color_gray_nurse_approx 0, $header_color_gallery_approx 100%);
+                background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $header_color_gray_nurse_approx), color-stop(100%, $header_color_gallery_approx));
+                background-image: -webkit-linear-gradient(top, $header_color_gray_nurse_approx 0, $header_color_gallery_approx 100%);
+                background-image: -o-linear-gradient(top, $header_color_gray_nurse_approx 0, $header_color_gallery_approx 100%);
+                background-image: -ms-linear-gradient(top, $header_color_gray_nurse_approx 0, $header_color_gallery_approx 100%);
+                background-image: linear-gradient(to bottom, $header_color_gray_nurse_approx 0, $header_color_gallery_approx 100%);
+                filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$header_color_gray_nurse_approx', endcolorstr='$header_color_gallery_approx', gradienttype=0);
+                -webkit-box-shadow: inset 0 0 3px 1px $header_black_15;
+                box-shadow: inset 0 0 3px 1px $header_black_15;
+            }
+        }
+    }
+}

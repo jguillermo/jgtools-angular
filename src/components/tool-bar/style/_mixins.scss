@@ -1,0 +1,12 @@
+// Mixins
+// --------------------------------------------------
+// aqui debes importar todos los misimsx del core que necesies desarrollar
+//@import "mixins/hide-text";
+
+
+@mixin jgc-tool-bar-variant($border, $heading-text-color, $heading-bg-color, $heading-border) {
+  
+    color: $heading-text-color;
+    background-color: $heading-bg-color;
+    border-color: $heading-border;
+}

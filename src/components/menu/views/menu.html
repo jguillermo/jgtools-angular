@@ -1,0 +1,187 @@
+<nav class="jgc-menu">
+	<ul>
+		<li ng-repeat="item in items">
+			<a ng-if="item.sref" data-ui-sref-active="active" data-ui-sref="{{item.sref}}" title="{{item.title}}" class="item"  href="">{{item.title}}</a>
+
+			<a ng-if="item.submenu" ng-class="{open: item.open}" title="{{item.title}}" class="item parent" ng-click="item.open=!item.open"  href="">{{item.title}}</a>
+
+			<ul ng-if="item.submenu" >
+				<li ng-repeat="itemSubMenu in item.submenu" ng-if="itemSubMenu.sref" >
+				<a data-ui-sref-active="active" data-ui-sref="{{itemSubMenu.sref}}" title="{{itemSubMenu.title}}" class="item" >{{itemSubMenu.title}}</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+<!--
+
+<ul>
+	<li>
+		<a class="item"  href="#">a</a>
+	</li>
+	<li>
+		<a class="item" href="#">b</a>
+	</li>
+	<li>
+		<a class="item" href="#">c</a>
+	</li>
+	<li>
+		<a class="item" href="#">d</a>
+	</li>
+	<li>
+		<a class="item" href="#">e</a>
+	</li>
+</ul>
+
+
+ <nav class="menu-profile">
+	<ul>
+		<li>
+			<a class="item parent"  href="#">Cras justo odio</a>
+			<ul>
+				<li>
+					<a class="item"  href="#">a</a>
+				</li>
+				<li>
+					<a class="item" href="#">b</a>
+				</li>
+				<li>
+					<a class="item" href="#">c</a>
+				</li>
+				<li>
+					<a class="item" href="#">d</a>
+				</li>
+				<li>
+					<a class="item" href="#">e</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a class="item parent open"  href="#">Temporibus, possimus.</a>
+			<ul>
+				<li>
+					<a class="item"  href="#">a</a>
+				</li>
+				<li>
+					<a class="item" href="#">b</a>
+				</li>
+				<li>
+					<a class="item" href="#">c</a>
+				</li>
+				<li>
+					<a class="item" href="#">d</a>
+				</li>
+				<li>
+					<a class="item" href="#">e</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a class="item" href="#">Dapibus ac facilisis in</a>
+		</li>
+		<li>
+			<a class="item" href="#">Morbi leo risus</a>
+		</li>
+		<li>
+			<a class="item" href="#">Porta ac consectetur ac</a>
+		</li>
+		<li>
+			<a class="item" href="#">Vestibulum at eros</a>
+		</li>
+	</ul>
+</nav>
+
+<nav class="menu-leftsdfsdf">
+	<ul>
+		<li data-ui-sref-active="active">
+			<a data-ui-sref="sis.dashboard" title="Dashboard"> <i class="fa fa-lg fa-fw fa-home"></i>
+				<span class="menu-item-parent">Dashboard</span>
+			</a>
+		</li>
+		<li data-ui-sref-active="active">
+			<a data-ui-sref="app.inbox.folder" title="Inbox">
+				<i class="fa fa-lg fa-fw fa-inbox"></i>
+				<span class="menu-item-parent">Inbox</span>
+				<span class="badge pull-right inbox-badge"></span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<i class="fa fa-lg fa-fw fa-bar-chart-o"></i>
+				<span class="menu-item-parent">Graphs</span>
+			</a>
+			<ul>
+				<li>
+					<a href="#">Flot Chart</a>
+					<ul>
+						<li>
+							<a href="#">hola 1</a>
+						</li>
+						<li>
+							<a href="#">hola 2</a>
+						</li>
+						<li>
+							<a href="#">hola 3</a>
+						</li>
+					</ul>
+				</li>
+				<li data-ui-sref-active="active">
+					<a data-ui-sref="app.graphs.morris">Morris Charts</a>
+				</li>
+				<li data-ui-sref-active="active">
+					<a data-ui-sref="app.graphs.inline">Inline Charts</a>
+				</li>
+				<li data-ui-sref-active="active">
+					<a data-ui-sref="app.graphs.dygraphs">Dygraphs</a>
+				</li>
+				<li data-ui-sref-active="active">
+					<a data-ui-sref="app.graphs.chartjs">
+						Chart.js
+						<span
+                                class="badge pull-right inbox-badge bg-color-yellow">new</span>
+					</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">
+				<i class="fa fa-lg fa-fw fa-bar-chart-o"></i>
+				<span class="menu-item-parent">segund</span>
+			</a>
+			<ul>
+				<li>
+					<a href="#">Flot Chart</a>
+					<ul>
+						<li>
+							<a href="#">hola 1</a>
+						</li>
+						<li>
+							<a href="#">hola 2</a>
+						</li>
+						<li>
+							<a href="#">hola 3</a>
+						</li>
+					</ul>
+				</li>
+				<li data-ui-sref-active="active">
+					<a data-ui-sref="app.graphs.morris">Morris Charts</a>
+				</li>
+				<li data-ui-sref-active="active">
+					<a data-ui-sref="app.graphs.inline">Inline Charts</a>
+				</li>
+				<li data-ui-sref-active="active">
+					<a data-ui-sref="app.graphs.dygraphs">Dygraphs</a>
+				</li>
+				<li data-ui-sref-active="active">
+					<a data-ui-sref="app.graphs.chartjs">
+						Chart.js
+						<span
+                                class="badge pull-right inbox-badge bg-color-yellow">new</span>
+					</a>
+				</li>
+			</ul>
+		</li>
+
+	</ul>
+</nav> -->

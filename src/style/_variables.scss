@@ -1,0 +1,107 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+
+//bac fiud color
+
+
+
+//== tipode variable
+//
+//## DEscripcion de la variable
+//
+//en est epunto se deben definir todas las variables que se van a usar en los modulos que vas a desaroollar 
+//o cambios pequeños ar core de boostrap
+//no es recomendame modificar el boostrap en este punto, 
+//para ello estan los skin para que personalices todo los que desees.
+
+
+
+$body-background-color: #f2f2f2;
+
+
+
+// tamaño del menu
+$jgc-layout-width: 220px;
+
+// espacios laterales del contenedor en modo celular
+$jgc-layout-padding-left: 0;
+$jgc-layout-padding-right: 0;
+
+// espacios laterales del contenedor en modo escritorio, por defecto 15px cada uno
+$jgc-layout-desktop-padding-left: ceil(($grid-gutter-width / 2));
+$jgc-layout-desktop-padding-right: floor(($grid-gutter-width / 2));
+
+
+
+$jgc-menu-bg:                 #fff !default;
+//** `.jgc-menu-item` border color
+$jgc-menu-border:             #ddd !default;
+//** List group border radius
+$jgc-menu-border-radius:      $border-radius-base !default;
+
+//** Background color of single list items on hover
+$jgc-menu-hover-bg:           #f5f5f5 !default;
+//** Text color of active list items
+$jgc-menu-active-color:       $component-active-color !default;
+//** Background color of active list items
+$jgc-menu-active-bg:          $component-active-bg !default;
+//** Border color of active list elements
+$jgc-menu-active-border:      $jgc-menu-active-bg !default;
+//** Text color for content within active list items
+$jgc-menu-active-text-color:  lighten($jgc-menu-active-bg, 40%) !default;
+
+//** Text color of disabled list items
+$jgc-menu-disabled-color:      $gray-light !default;
+//** Background color of disabled list items
+$jgc-menu-disabled-bg:         $gray-lighter !default;
+//** Text color for content within disabled list items
+$jgc-menu-disabled-text-color: $jgc-menu-disabled-color !default;
+
+$jgc-menu-link-color:         #555 !default;
+$jgc-menu-link-hover-color:   $jgc-menu-link-color !default;
+$jgc-menu-link-heading-color: #333 !default;
+
+// definir el tipo de icono que va atener el menu
+$jgc-menu-icon-right: 15px;
+$jgc-menu-icon-top: 13px;
+$jgc-menu-icon-color: $jgc-menu-link-color;
+$jgc-menu-icon-font-size: 10px;    
+$jgc-menu-icon-background-color: inherit;
+$jgc-menu-icon-font-family: inherit;
+
+$jgc-menu-icon-content: '[+]';
+$jgc-menu-icon-content-open: '[-]';
+
+
+// dimensiones del item 
+// 
+$jgc-menu-item-padding-top: 10px;
+$jgc-menu-item-padding-right:  15px;
+$jgc-menu-item-padding-bottom: 10px;
+$jgc-menu-item-padding-left: 15px;
+
+//-top:
+//-right: 
+//-bottom:
+//-left:
+
+
+
+// border del item
+$jgc-menu-item-border-top: 1px solid $jgc-menu-border;
+$jgc-menu-item-border-right: none;
+$jgc-menu-item-border-bottom: 1px solid $jgc-menu-border;
+$jgc-menu-item-border-left: none;
+
+// sub menu
+$jgc-menu-sub-menu-content-margin-left: ceil(($grid-gutter-width / 2));//15px;
+$jgc-menu-sub-menu-item-padding-left: $jgc-menu-item-padding-left + ceil(($jgc-menu-sub-menu-content-margin-left / 3));//5px;
+$jgc-menu-sub-menu-item-hover-color : $jgc-menu-link-color;
+$jgc-menu-sub-menu-item-color:lighten($jgc-menu-link-color,30%);
+
+// component card
+$jgc-card-margin:8px;
+$jgc-card-row-margin:$jgc-card-margin - ceil(($grid-gutter-width / 2));

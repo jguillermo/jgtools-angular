@@ -1,0 +1,9 @@
+@import "ini";
+// se genera el core de la aplicacion, inicia conboostrap y se puede poner 
+@import "../../style/core";
+@import "../../components/layout/style/layout";
+@import "../../components/menu/style/menu";
+@import "../../components/menu-horizontal/style/menu-horizontal";
+@import "../../components/tool-bar/style/tool-bar";
+@import "../../components/card/style/card";
+@import "form";

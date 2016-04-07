@@ -1,0 +1,26 @@
+<jgc-layout jgt-component-id="layout_principal" >
+    <jgc-layout-west>
+        <jgc-tool-bar class="primary">
+            <div class="pull-left">
+                <div class="btn-tool-bar visible-xs-block" >
+                    <button class="btn btn-default" ng-click="changeWest()">Menu</button>
+                </div>
+                <div class="title-tool-bar">JGTOOLS</div>
+            </div>
+        </jgc-tool-bar>
+        <jgc-menu items="itemenu" ></jgc-menu>
+    </jgc-layout-west>
+    <jgc-layout-center>
+        <jgc-tool-bar class="primary">
+            <div class="pull-left">
+                <div class="btn-tool-bar">
+                    <button class="btn btn-default" ng-click="changeWest()">Menu</button>
+                </div>
+                <div class="title-tool-bar" jgc-title >&nbsp;</div>
+            </div>
+        </jgc-tool-bar>
+        <div class="content container-fluid" style="padding-top:30px;">
+            <div ui-view></div>
+        </div>
+    </jgc-layout-center>
+</jgc-layout>

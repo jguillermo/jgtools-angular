@@ -1,0 +1,24 @@
+// Mixins
+// --------------------------------------------------
+// aqui debes importar todos los misimsx del core que necesies desarrollar
+//@import "mixins/hide-text";
+@mixin button-variant-min($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  
+  &:hover {
+    color: $color;
+    background-color: darken($background, 10%);
+    border-color: darken($border, 12%);
+  }
+  
+  &.disabled,
+  &[disabled] {
+      background-color: $background;
+          border-color: $border;
+    
+  }
+
+}

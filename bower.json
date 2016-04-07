@@ -1,0 +1,23 @@
+{
+  "name": "jmaptools",
+  "version": "0.0.0",
+  "authors": [
+    "Jose Guillermo <jguillermo@outlook.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-mocks": "~1.4.7",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.5",
+    "highcharts": "~4.2.0",
+    "angular-bootstrap": "~0.14.3"
+  }
+}

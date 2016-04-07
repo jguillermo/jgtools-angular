@@ -1,0 +1,79 @@
+// bootstrap
+// Reset and dependencies
+@import "frameworks/bootstrap/bootstrap/normalize";
+// Core CSS
+@import "frameworks/bootstrap/bootstrap/scaffolding";
+@import "frameworks/bootstrap/bootstrap/type";
+@import "frameworks/bootstrap/bootstrap/grid";
+// Utility classes
+@import "frameworks/bootstrap/bootstrap/utilities";
+@import "frameworks/bootstrap/bootstrap/responsive-utilities";
+
+
+@import "frameworks/bootstrap/bootstrap/modals";
+
+// se debe crear un modo litle para lso elemtos en el core
+//@import "frameworks/bootstrap/bootstrap/buttons";
+
+@import "bootstrap-light";
+
+@import "jg-utilities";
+
+
+
+//sis 
+//@import "layout";
+//@import "menu_profile";
+
+
+/*
+// Reset and dependencies
+@import "../frameworks/bootstrap/bootstrap/normalize";
+@import "../frameworks/bootstrap/bootstrap/print";
+@import "../frameworks/bootstrap/bootstrap/glyphicons";
+
+// Core CSS
+@import "../frameworks/bootstrap/bootstrap/scaffolding";
+@import "../frameworks/bootstrap/bootstrap/type";
+@import "../frameworks/bootstrap/bootstrap/code";
+@import "../frameworks/bootstrap/bootstrap/grid";
+@import "../frameworks/bootstrap/bootstrap/tables";
+@import "../frameworks/bootstrap/bootstrap/forms";
+@import "../frameworks/bootstrap/bootstrap/buttons";
+
+
+
+// Components
+@import "../frameworks/bootstrap/bootstrap/component-animations";
+@import "../frameworks/bootstrap/bootstrap/dropdowns";
+@import "../frameworks/bootstrap/bootstrap/button-groups";
+@import "../frameworks/bootstrap/bootstrap/input-groups";
+@import "../frameworks/bootstrap/bootstrap/navs";
+@import "../frameworks/bootstrap/bootstrap/navbar";
+@import "../frameworks/bootstrap/bootstrap/breadcrumbs";
+@import "../frameworks/bootstrap/bootstrap/pagination";
+@import "../frameworks/bootstrap/bootstrap/pager";
+@import "../frameworks/bootstrap/bootstrap/labels";
+@import "../frameworks/bootstrap/bootstrap/badges";
+@import "../frameworks/bootstrap/bootstrap/jumbotron";
+@import "../frameworks/bootstrap/bootstrap/thumbnails";
+@import "../frameworks/bootstrap/bootstrap/alerts";
+@import "../frameworks/bootstrap/bootstrap/progress-bars";
+@import "../frameworks/bootstrap/bootstrap/media";
+@import "../frameworks/bootstrap/bootstrap/list-group";
+@import "../frameworks/bootstrap/bootstrap/panels";
+@import "../frameworks/bootstrap/bootstrap/responsive-embed";
+@import "../frameworks/bootstrap/bootstrap/wells";
+@import "../frameworks/bootstrap/bootstrap/close";
+
+// Components w/ JavaScript
+@import "../frameworks/bootstrap/bootstrap/modals";
+@import "../frameworks/bootstrap/bootstrap/tooltip";
+@import "../frameworks/bootstrap/bootstrap/popovers";
+@import "../frameworks/bootstrap/bootstrap/carousel";
+
+// Utility classes
+@import "../frameworks/bootstrap/bootstrap/utilities";
+@import "../frameworks/bootstrap/bootstrap/responsive-utilities";
+
+*/

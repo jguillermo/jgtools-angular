@@ -1,0 +1,31 @@
+<div style=" width:200px ">
+	<jgc-menu items="itemenu" ></jgc-menu>
+</div>
+
+<pre class="prettyprint">
+<jgc-p-menu items="itemenu" ></jgc-p-menu>
+</pre>
+
+
+<pre class="prettyprint">
+
+$scope.itemenu = [{
+  title: 'menu1',
+  sref: 'sis.dashboard'
+}, {
+  title: 'menu2',
+  submenu: [{
+    title: 'submenu 1',
+    sref: 'sis.dashboard12'
+  }, {
+    title: 'submenu 2',
+    sref: 'sis.dashboard12b'
+  }, {
+    title: 'submenu 3',
+    sref: 'sis.dashboard12c'
+  }, ]
+}, {
+  title: 'menu3',
+  sref: 'sis.dashboard3'
+}];
+</pre>
