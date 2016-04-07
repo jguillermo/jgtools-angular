@@ -19,16 +19,16 @@
                 src: 'plugins/code-prettify-master/loader/lang-css.js'
             }, {
                 id: 'angular',
-                src: '../dev/plugins/angular/angular.js'
+                src: 'dev/plugins/angular/angular.js'
             }, {
                 id: 'angular-ui-router',
-                src: '../dev/plugins/angular-ui-router/angular-ui-router.js'
+                src: 'dev/plugins/angular-ui-router/angular-ui-router.js'
             }, {
                 id: 'angular-bootstrap',
-                src: '../dev/plugins/angular-bootstrap/ui-bootstrap-tpls.js'
+                src: 'dev/plugins/angular-bootstrap/ui-bootstrap-tpls.js'
             }, {
                 id: 'jg-tools',
-                src: '../dev/jg-tools.js'
+                src: 'dev/jg-tools.js'
             }, {
                 id: 'script',
                 src: 'script.js'
@@ -40,7 +40,7 @@
             cache:false,
             version:'5',
             cachePrefix:'jtlc',
-            base_url:'../dev/',
+            base_url:'dev/',
             onLoad:function(){
                 angular.module('AppDoc.config', [])
                 .constant("APPCONFIG", {
@@ -57,6 +57,6 @@
             }
         };
     </script>
-    <script type="text/javascript" charset="utf-8" src="../dev/jsapi.js" async=""></script>
+    <script type="text/javascript" charset="utf-8" src="dev/jsapi.js" async=""></script>
 </body>
 </html>
